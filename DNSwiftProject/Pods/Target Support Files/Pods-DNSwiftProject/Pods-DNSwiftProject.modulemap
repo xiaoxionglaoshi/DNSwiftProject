@@ -1,0 +1,6 @@
+framework module Pods_DNSwiftProject {
+  umbrella header "Pods-DNSwiftProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
