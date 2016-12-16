@@ -232,9 +232,6 @@ class DNCustomShareView: UIView {
         let img = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return img!
-        
-        
-        
     }
     
     //MARK: lazy init

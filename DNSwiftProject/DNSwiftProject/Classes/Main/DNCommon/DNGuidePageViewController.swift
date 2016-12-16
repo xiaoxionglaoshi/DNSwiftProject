@@ -75,7 +75,6 @@ class DNGuidePageViewController: UICollectionViewController {
 // MARK: DNGuidePageLayout
 private class DNGuidePageLayout: UICollectionViewFlowLayout {
     // 准备布局
-    
     fileprivate override func prepare() {
         // 设置layout布局
         itemSize = UIScreen.main.bounds.size

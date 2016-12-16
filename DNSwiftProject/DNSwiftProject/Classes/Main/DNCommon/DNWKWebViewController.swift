@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class DNWKWebViewController: UIViewController {
+class DNWKWebViewController: DNBaseViewController {
 
     var urlString: String?
     var delayTime: Double?
@@ -30,7 +30,15 @@ class DNWKWebViewController: UIViewController {
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(self.addWeixinShareView))
         self.navigationItem.rightBarButtonItem?.isEnabled = false
-        
+    }
+    
+    // 重写返回事件
+    override func backBtnClick() {
+        if self.webView.canGoBack {
+            self.webView.goBack()
+        } else {
+            _ = self.navigationController?.popViewController(animated: true)
+        }
     }
     
     // 加载网页
@@ -62,7 +70,6 @@ class DNWKWebViewController: UIViewController {
             self.title = self.webView.title
         }
     }
-    
     
     // MARK: Setter&Getter
     lazy var webView: WKWebView = {
@@ -109,7 +116,6 @@ extension DNWKWebViewController: WKNavigationDelegate {
         print(#function)
         let URL = navigationAction.request.url
         print(URL?.absoluteString ?? "没有UrlString")
-        
         
         decisionHandler(.allow)
     }

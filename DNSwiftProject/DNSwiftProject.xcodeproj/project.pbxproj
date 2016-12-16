@@ -25,10 +25,17 @@
 		5148C1CB1E01456D002701C5 /* DNWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5148C1CA1E01456D002701C5 /* DNWKWebViewController.swift */; };
 		5148C1CF1E0145AA002701C5 /* DNCustomShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5148C1CD1E0145AA002701C5 /* DNCustomShareView.swift */; };
 		5148C1D01E0145AA002701C5 /* DNShareScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5148C1CE1E0145AA002701C5 /* DNShareScrollView.swift */; };
+		517F9CF11E0235EA00B2B207 /* DNCustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */; };
+		517F9CF31E023AD400B2B207 /* DNActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9CF21E023AD400B2B207 /* DNActionSheet.swift */; };
+		517F9CF51E023B3D00B2B207 /* DNNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9CF41E023B3D00B2B207 /* DNNotificationView.swift */; };
 		518034451DF5374600EF45E5 /* DNTempModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518034441DF5374600EF45E5 /* DNTempModel.swift */; };
 		518034491DF537F000EF45E5 /* DNCustomParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518034481DF537F000EF45E5 /* DNCustomParser.swift */; };
 		5187BDF71DF1489600C65AEA /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5187BDF61DF1489600C65AEA /* SwiftNotice.swift */; };
 		518C6D8B1DF009FC00C23501 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518C6D8A1DF009FC00C23501 /* DetailViewController.swift */; };
+		519F03971E03D28100609AF2 /* DNLaunchImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519F03961E03D28100609AF2 /* DNLaunchImage.swift */; };
+		519F03991E03D29400609AF2 /* DNLaunchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519F03981E03D29400609AF2 /* DNLaunchImageView.swift */; };
+		519F039B1E03D2A600609AF2 /* DNLaunchImageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519F039A1E03D2A600609AF2 /* DNLaunchImageAction.swift */; };
+		519F039D1E03D65200609AF2 /* DNLoadAdsWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519F039C1E03D65200609AF2 /* DNLoadAdsWebViewViewController.swift */; };
 		519F16061DEBE39100EB0D9F /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 519F16051DEBE39100EB0D9F /* main.json */; };
 		519F16081DEBFE8B00EB0D9F /* DNMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519F16071DEBFE8B00EB0D9F /* DNMainModel.swift */; };
 		519F160A1DEC174C00EB0D9F /* DNMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519F16091DEC174C00EB0D9F /* DNMessages.swift */; };
@@ -93,10 +100,17 @@
 		5148C1CA1E01456D002701C5 /* DNWKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNWKWebViewController.swift; sourceTree = "<group>"; };
 		5148C1CD1E0145AA002701C5 /* DNCustomShareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCustomShareView.swift; sourceTree = "<group>"; };
 		5148C1CE1E0145AA002701C5 /* DNShareScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNShareScrollView.swift; sourceTree = "<group>"; };
+		517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCustomAlert.swift; sourceTree = "<group>"; };
+		517F9CF21E023AD400B2B207 /* DNActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNActionSheet.swift; sourceTree = "<group>"; };
+		517F9CF41E023B3D00B2B207 /* DNNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNNotificationView.swift; sourceTree = "<group>"; };
 		518034441DF5374600EF45E5 /* DNTempModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNTempModel.swift; sourceTree = "<group>"; };
 		518034481DF537F000EF45E5 /* DNCustomParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCustomParser.swift; sourceTree = "<group>"; };
 		5187BDF61DF1489600C65AEA /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		518C6D8A1DF009FC00C23501 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		519F03961E03D28100609AF2 /* DNLaunchImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNLaunchImage.swift; sourceTree = "<group>"; };
+		519F03981E03D29400609AF2 /* DNLaunchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNLaunchImageView.swift; sourceTree = "<group>"; };
+		519F039A1E03D2A600609AF2 /* DNLaunchImageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNLaunchImageAction.swift; sourceTree = "<group>"; };
+		519F039C1E03D65200609AF2 /* DNLoadAdsWebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNLoadAdsWebViewViewController.swift; sourceTree = "<group>"; };
 		519F16051DEBE39100EB0D9F /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		519F16071DEBFE8B00EB0D9F /* DNMainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNMainModel.swift; sourceTree = "<group>"; };
 		519F16091DEC174C00EB0D9F /* DNMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNMessages.swift; sourceTree = "<group>"; };
@@ -213,12 +227,40 @@
 			path = DNShareView;
 			sourceTree = "<group>";
 		};
+		517F9CEF1E022F5500B2B207 /* DNCustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */,
+				517F9CF21E023AD400B2B207 /* DNActionSheet.swift */,
+				517F9CF41E023B3D00B2B207 /* DNNotificationView.swift */,
+			);
+			path = DNCustomAlert;
+			sourceTree = "<group>";
+		};
 		5187BDF51DF1488D00C65AEA /* DNSwiftNotice */ = {
 			isa = PBXGroup;
 			children = (
 				5187BDF61DF1489600C65AEA /* SwiftNotice.swift */,
 			);
 			path = DNSwiftNotice;
+			sourceTree = "<group>";
+		};
+		519F03911E03C07900609AF2 /* DNBaseSetting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DNBaseSetting;
+			sourceTree = "<group>";
+		};
+		519F03951E03D25F00609AF2 /* DNLaunchImage */ = {
+			isa = PBXGroup;
+			children = (
+				519F03961E03D28100609AF2 /* DNLaunchImage.swift */,
+				519F03981E03D29400609AF2 /* DNLaunchImageView.swift */,
+				519F039A1E03D2A600609AF2 /* DNLaunchImageAction.swift */,
+				519F039C1E03D65200609AF2 /* DNLoadAdsWebViewViewController.swift */,
+			);
+			path = DNLaunchImage;
 			sourceTree = "<group>";
 		};
 		51CE117E1DFE9A7900787D4C /* DNExtensions */ = {
@@ -551,6 +593,9 @@
 		51F01D331DE816C700C25880 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				519F03951E03D25F00609AF2 /* DNLaunchImage */,
+				519F03911E03C07900609AF2 /* DNBaseSetting */,
+				517F9CEF1E022F5500B2B207 /* DNCustomAlert */,
 				5148C1CC1E0145AA002701C5 /* DNShareView */,
 				5148C19D1E0135E4002701C5 /* DNJPush */,
 				5187BDF51DF1488D00C65AEA /* DNSwiftNotice */,
@@ -768,6 +813,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				519F039B1E03D2A600609AF2 /* DNLaunchImageAction.swift in Sources */,
 				518034451DF5374600EF45E5 /* DNTempModel.swift in Sources */,
 				5148C1CB1E01456D002701C5 /* DNWKWebViewController.swift in Sources */,
 				51F4D8531DE81C6F0037A61E /* DNGuidePageViewController.swift in Sources */,
@@ -777,11 +823,15 @@
 				51F4D8471DE819EA0037A61E /* DNTabBarViewController.swift in Sources */,
 				5148C1CF1E0145AA002701C5 /* DNCustomShareView.swift in Sources */,
 				51F4D8431DE8199C0037A61E /* DNConfig.swift in Sources */,
+				517F9CF51E023B3D00B2B207 /* DNNotificationView.swift in Sources */,
 				519F160A1DEC174C00EB0D9F /* DNMessages.swift in Sources */,
+				519F039D1E03D65200609AF2 /* DNLoadAdsWebViewViewController.swift in Sources */,
 				519F16081DEBFE8B00EB0D9F /* DNMainModel.swift in Sources */,
 				518034491DF537F000EF45E5 /* DNCustomParser.swift in Sources */,
 				5148C1C91E0144BD002701C5 /* DNFoundCell.swift in Sources */,
 				51F4D8491DE81A590037A61E /* DNNavigationController.swift in Sources */,
+				517F9CF11E0235EA00B2B207 /* DNCustomAlert.swift in Sources */,
+				517F9CF31E023AD400B2B207 /* DNActionSheet.swift in Sources */,
 				51F4D85E1DE847060037A61E /* DNHomeModel.swift in Sources */,
 				51F4D84F1DE81B040037A61E /* DNFoundViewController.swift in Sources */,
 				5148C1C31E013979002701C5 /* DNJPushManager.swift in Sources */,
@@ -791,10 +841,12 @@
 				51F4D8401DE819080037A61E /* DNBaseViewController.swift in Sources */,
 				5148C1C21E013979002701C5 /* DNJPushExtension.swift in Sources */,
 				51CE11801DFE9A9E00787D4C /* ArrayExtensions.swift in Sources */,
+				519F03991E03D29400609AF2 /* DNLaunchImageView.swift in Sources */,
 				51F4D84B1DE81AE80037A61E /* DNHomeViewController.swift in Sources */,
 				5187BDF71DF1489600C65AEA /* SwiftNotice.swift in Sources */,
 				51F4D84D1DE81AFA0037A61E /* DNAddressViewController.swift in Sources */,
 				5148C1C51E013E76002701C5 /* DNMineCell.swift in Sources */,
+				519F03971E03D28100609AF2 /* DNLaunchImage.swift in Sources */,
 				51F4D85A1DE83B580037A61E /* DNTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

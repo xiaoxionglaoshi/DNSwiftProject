@@ -25,7 +25,7 @@ class DNShareScrollView: UIScrollView {
     weak var shareScrollDelegate: DNShareScrollViewDelegate?
     
     deinit {
-//        print("deinit_scroll")
+        print("deinit_scroll")
     }
     
     public func setShareArray(shareArray: Array<AnyObject>, delegate: AnyObject) {
@@ -96,7 +96,6 @@ class DNShareScrollView: UIScrollView {
             label.frame = CGRect(x: label.frame.origin.x, y: label.frame.origin.y - animationChangeHeight, width: label.frame.size.width, height: label.frame.size.height)
             }, completion: { _ in })
 
-        
         return view
     }
     
@@ -114,7 +113,6 @@ class DNShareScrollView: UIScrollView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     
     private func initScrollView(frame: CGRect) {
         self.showsHorizontalScrollIndicator = true

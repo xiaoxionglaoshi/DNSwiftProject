@@ -27,6 +27,18 @@ class DetailViewController: DNBaseViewController {
             print("pushVC: \(message)")
         }
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let alertView = DNCustomAlert(title: "提示", message: "这是一个自定义的提示框,可不要小瞧我哦?", cancelButtonTitle: "取消", sureButtonTitle: "确定")
+        alertView.show()
+        alertView.clickIndexClosure { (index) in
+            print("我点击的是: \(index)")
+        }
+        
+        let notiView = DNNotificationView(title: "貌似你的应用不错哦", showType: .top)
+        notiView.show()
+        
+    }
 
 }
 
