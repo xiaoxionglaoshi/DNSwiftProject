@@ -23,10 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let picUrl = "http://ww3.sinaimg.cn/mw690/937882b5gw1f9alr6oysjj20hs0qowg0.jpg"
         
         // 检测用户是不是首次安装
-        if !UserDefaults.standard.bool(forKey: "firstLauch") {
+        if isNewVersion {
             self.window?.rootViewController = DNGuidePageViewController()
-            UserDefaults.standard.set(true, forKey: "firstLauch")
-            
             // 第一次加载不显示广告业,只是默默地下载下次用
             DNLaunchImageView.downLoadAdsImage(imageUrl: picUrl)
         } else {

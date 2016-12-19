@@ -60,3 +60,16 @@ func DNColor(_ hex:String) -> UIColor {
     Scanner(string: bString).scanHexInt32(&b);
     return UIColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: CGFloat(1));
 }
+
+// 返回是否是新版本
+var isNewVersion: Bool {
+    //取出当前是版本号
+    let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
+    //取出保存在偏好设置的版本号
+    let beforeVersion = UserDefaults.standard.string(forKey: "DNVersionKey") ?? ""
+    //将当前的版本号偏好设置
+    UserDefaults.standard.set(currentVersion, forKey: "DNVersionKey")
+    //返回 连个版本号是否一致
+    return currentVersion != beforeVersion
+    
+}
