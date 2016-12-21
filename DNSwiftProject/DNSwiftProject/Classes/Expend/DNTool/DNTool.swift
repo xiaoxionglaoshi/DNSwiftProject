@@ -21,14 +21,6 @@ func DNPrint(_ item: @autoclosure () -> Any) {
     #endif
 }
 
-// 当前时间
-func getCurrentDateString() -> String {
-    let date = Date()
-    let timeFormatter = DateFormatter()
-    timeFormatter.dateFormat = "yyyy年MM月dd日"
-    let currentDateString = timeFormatter.string(from: date) as String
-    return currentDateString
-}
 
 // 颜色设置RGB
 func DNColor(_ r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) -> UIColor {
