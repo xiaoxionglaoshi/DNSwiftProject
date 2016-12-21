@@ -26,6 +26,7 @@
 		5148C1CF1E0145AA002701C5 /* DNCustomShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5148C1CD1E0145AA002701C5 /* DNCustomShareView.swift */; };
 		5148C1D01E0145AA002701C5 /* DNShareScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5148C1CE1E0145AA002701C5 /* DNShareScrollView.swift */; };
 		517065F81E07E5EA00EF8119 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517065F71E07E5EA00EF8119 /* DateExtension.swift */; };
+		517D3C751E0A1EDF00B679F1 /* DNDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3C741E0A1EDF00B679F1 /* DNDragView.swift */; };
 		517F9CF11E0235EA00B2B207 /* DNCustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */; };
 		517F9CF31E023AD400B2B207 /* DNActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9CF21E023AD400B2B207 /* DNActionSheet.swift */; };
 		517F9CF51E023B3D00B2B207 /* DNNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9CF41E023B3D00B2B207 /* DNNotificationView.swift */; };
@@ -119,6 +120,7 @@
 		5148C1CD1E0145AA002701C5 /* DNCustomShareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCustomShareView.swift; sourceTree = "<group>"; };
 		5148C1CE1E0145AA002701C5 /* DNShareScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNShareScrollView.swift; sourceTree = "<group>"; };
 		517065F71E07E5EA00EF8119 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		517D3C741E0A1EDF00B679F1 /* DNDragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNDragView.swift; sourceTree = "<group>"; };
 		517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCustomAlert.swift; sourceTree = "<group>"; };
 		517F9CF21E023AD400B2B207 /* DNActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNActionSheet.swift; sourceTree = "<group>"; };
 		517F9CF41E023B3D00B2B207 /* DNNotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNNotificationView.swift; sourceTree = "<group>"; };
@@ -261,6 +263,14 @@
 				5148C1CE1E0145AA002701C5 /* DNShareScrollView.swift */,
 			);
 			path = DNShareView;
+			sourceTree = "<group>";
+		};
+		517D3C731E0A1EC900B679F1 /* DNDragView */ = {
+			isa = PBXGroup;
+			children = (
+				517D3C741E0A1EDF00B679F1 /* DNDragView.swift */,
+			);
+			path = DNDragView;
 			sourceTree = "<group>";
 		};
 		517F9CEF1E022F5500B2B207 /* DNCustomAlert */ = {
@@ -647,6 +657,7 @@
 		51F01D331DE816C700C25880 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				517D3C731E0A1EC900B679F1 /* DNDragView */,
 				519F03951E03D25F00609AF2 /* DNLaunchImage */,
 				519F03911E03C07900609AF2 /* DNBaseSetting */,
 				517F9CEF1E022F5500B2B207 /* DNCustomAlert */,
@@ -911,6 +922,7 @@
 				5148C1C21E013979002701C5 /* DNJPushExtension.swift in Sources */,
 				51CE11801DFE9A9E00787D4C /* ArrayExtensions.swift in Sources */,
 				519F03991E03D29400609AF2 /* DNLaunchImageView.swift in Sources */,
+				517D3C751E0A1EDF00B679F1 /* DNDragView.swift in Sources */,
 				51F4D84B1DE81AE80037A61E /* DNHomeViewController.swift in Sources */,
 				5187BDF71DF1489600C65AEA /* SwiftNotice.swift in Sources */,
 				518C5B271E0927990019835D /* BlockTap.swift in Sources */,

@@ -30,7 +30,16 @@ class DNHomeViewController: UIViewController {
         
         
         
-       
+        let dragView = DNDragView(frame: CGRect(x: 100, y: 250, width: 100, height: 100))
+        dragView.isKeepBounds = true
+        dragView.backgroundColor = UIColor.green
+        self.view.addSubview(dragView)
+        dragView.onClickDrageBlock = { dragV in
+            print("xxx")
+        }
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
