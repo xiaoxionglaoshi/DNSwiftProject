@@ -28,8 +28,6 @@ class DNHomeViewController: UIViewController {
         myLabel.h = height
         self.view.addSubview(myLabel)
         
-        
-        
         let dragView = DNDragView(frame: CGRect(x: 100, y: 250, width: 100, height: 100))
         dragView.isKeepBounds = true
         dragView.backgroundColor = UIColor.green
@@ -37,8 +35,6 @@ class DNHomeViewController: UIViewController {
         dragView.onClickDrageBlock = { dragV in
             print("xxx")
         }
-        
-        
         
     }
 

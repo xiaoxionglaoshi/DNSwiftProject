@@ -49,7 +49,7 @@ class DNNetwork: NSObject {
     /// - parameter parameters: 参数
     /// - parameter success:    成功后回调 返回JSON数据
     /// - parameter failure:    失败后回调
-    open func GET(url: String, parameters: [String: AnyObject]?, success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
+    open func GET(url: String, parameters: [String: AnyObject]? = [:], success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
         
         var requestUrlString = url
         if !url.hasPrefix("http://") && !url.hasPrefix("https://") {
@@ -69,7 +69,7 @@ class DNNetwork: NSObject {
     }
     
     
-    open func POST(url: String, parameters: [String: AnyObject]?, success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
+    open func POST(url: String, parameters: [String: AnyObject]? = [:], success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
         var requestUrlString = url
         if !url.hasPrefix("http://") && !url.hasPrefix("https://") {
             requestUrlString = self.host + url
