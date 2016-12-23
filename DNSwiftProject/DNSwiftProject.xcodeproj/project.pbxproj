@@ -34,6 +34,11 @@
 		515F7BE51E0BA77000F4B2BD /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F7BE41E0BA77000F4B2BD /* UITableViewExtensions.swift */; };
 		515F7BE91E0BAAF200F4B2BD /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F7BE81E0BAAF200F4B2BD /* UIColorExtension.swift */; };
 		515F7BEB1E0BAED800F4B2BD /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F7BEA1E0BAED800F4B2BD /* IntExtension.swift */; };
+		516C11611E0CB9F8007B5D69 /* DNCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C11601E0CB9F8007B5D69 /* DNCycleModel.swift */; };
+		516C11631E0CBB79007B5D69 /* DNCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C11621E0CBB79007B5D69 /* DNCycleView.swift */; };
+		516C11651E0CBB90007B5D69 /* DNCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C11641E0CBB90007B5D69 /* DNCycleViewCell.swift */; };
+		516C11681E0CC23F007B5D69 /* mn_pageControl_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C11661E0CC23F007B5D69 /* mn_pageControl_selected@2x.png */; };
+		516C11691E0CC23F007B5D69 /* mn_pageControl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C11671E0CC23F007B5D69 /* mn_pageControl@2x.png */; };
 		517065F81E07E5EA00EF8119 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517065F71E07E5EA00EF8119 /* DateExtension.swift */; };
 		517D3C751E0A1EDF00B679F1 /* DNDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3C741E0A1EDF00B679F1 /* DNDragView.swift */; };
 		517F9CF11E0235EA00B2B207 /* DNCustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */; };
@@ -137,6 +142,11 @@
 		515F7BE41E0BA77000F4B2BD /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		515F7BE81E0BAAF200F4B2BD /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		515F7BEA1E0BAED800F4B2BD /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		516C11601E0CB9F8007B5D69 /* DNCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCycleModel.swift; sourceTree = "<group>"; };
+		516C11621E0CBB79007B5D69 /* DNCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCycleView.swift; sourceTree = "<group>"; };
+		516C11641E0CBB90007B5D69 /* DNCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCycleViewCell.swift; sourceTree = "<group>"; };
+		516C11661E0CC23F007B5D69 /* mn_pageControl_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mn_pageControl_selected@2x.png"; sourceTree = "<group>"; };
+		516C11671E0CC23F007B5D69 /* mn_pageControl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mn_pageControl@2x.png"; sourceTree = "<group>"; };
 		517065F71E07E5EA00EF8119 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		517D3C741E0A1EDF00B679F1 /* DNDragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNDragView.swift; sourceTree = "<group>"; };
 		517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCustomAlert.swift; sourceTree = "<group>"; };
@@ -323,6 +333,18 @@
 				518C5B2E1E092A2B0019835D /* BlockLongPress.swift */,
 			);
 			name = UI;
+			sourceTree = "<group>";
+		};
+		516C115F1E0CB9EA007B5D69 /* DNCycleView */ = {
+			isa = PBXGroup;
+			children = (
+				516C11661E0CC23F007B5D69 /* mn_pageControl_selected@2x.png */,
+				516C11671E0CC23F007B5D69 /* mn_pageControl@2x.png */,
+				516C11601E0CB9F8007B5D69 /* DNCycleModel.swift */,
+				516C11621E0CBB79007B5D69 /* DNCycleView.swift */,
+				516C11641E0CBB90007B5D69 /* DNCycleViewCell.swift */,
+			);
+			path = DNCycleView;
 			sourceTree = "<group>";
 		};
 		517D3C731E0A1EC900B679F1 /* DNDragView */ = {
@@ -700,6 +722,7 @@
 		51F01D331DE816C700C25880 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				516C115F1E0CB9EA007B5D69 /* DNCycleView */,
 				517D3C731E0A1EC900B679F1 /* DNDragView */,
 				519F03951E03D25F00609AF2 /* DNLaunchImage */,
 				519F03911E03C07900609AF2 /* DNBaseSetting */,
@@ -847,7 +870,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516C11681E0CC23F007B5D69 /* mn_pageControl_selected@2x.png in Resources */,
 				519F16061DEBE39100EB0D9F /* main.json in Resources */,
+				516C11691E0CC23F007B5D69 /* mn_pageControl@2x.png in Resources */,
 				51F01CDD1DE7EE8500C25880 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -928,6 +953,7 @@
 				518C5B2D1E0929C70019835D /* BlockPinch.swift in Sources */,
 				51F4D8531DE81C6F0037A61E /* DNGuidePageViewController.swift in Sources */,
 				518C5B2F1E092A2B0019835D /* BlockLongPress.swift in Sources */,
+				516C11631E0CBB79007B5D69 /* DNCycleView.swift in Sources */,
 				518C6D8B1DF009FC00C23501 /* DetailViewController.swift in Sources */,
 				51F4D85C1DE8466B0037A61E /* DNHomeRequest.swift in Sources */,
 				51F4D8511DE81B110037A61E /* DNMineViewController.swift in Sources */,
@@ -953,6 +979,7 @@
 				51F4D8491DE81A590037A61E /* DNNavigationController.swift in Sources */,
 				517F9CF11E0235EA00B2B207 /* DNCustomAlert.swift in Sources */,
 				515F7BD51E0B756900F4B2BD /* DictionaryExtension.swift in Sources */,
+				516C11611E0CB9F8007B5D69 /* DNCycleModel.swift in Sources */,
 				515F7BE51E0BA77000F4B2BD /* UITableViewExtensions.swift in Sources */,
 				518C5B2B1E0928FD0019835D /* BlockPan.swift in Sources */,
 				517F9CF31E023AD400B2B207 /* DNActionSheet.swift in Sources */,
@@ -960,6 +987,7 @@
 				51F4D85E1DE847060037A61E /* DNHomeModel.swift in Sources */,
 				51F4D84F1DE81B040037A61E /* DNFoundViewController.swift in Sources */,
 				518C5B111E08C9B10019835D /* UILabelExtension.swift in Sources */,
+				516C11651E0CBB90007B5D69 /* DNCycleViewCell.swift in Sources */,
 				518C5B1D1E0917700019835D /* NSDictionaryExtensions.swift in Sources */,
 				5148C1C31E013979002701C5 /* DNJPushManager.swift in Sources */,
 				515F7BD71E0B765200F4B2BD /* StringExtension.swift in Sources */,

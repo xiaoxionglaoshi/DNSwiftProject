@@ -9,27 +9,67 @@
 import UIKit
 
 class DNAddressViewController: DNBaseViewController {
+    
+    lazy var tableView = UITableView()
+    lazy var modelArr = [DNCycleModel]()
+    var cycleView: DNCycleView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.frame = view.bounds
+        tableView.delegate = self
+        tableView.dataSource = self
+        view.addSubview(tableView)
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
+        
+        cycleView = DNCycleView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 250))
+        cycleView?.delegate = self
+        tableView.tableHeaderView = cycleView
+        requestData()
+        
+    }
+    
+    func requestData() {
+        let tempArr = [["title":"中国奥运军团三金回顾","imageString":"http://pic33.nipic.com/20130916/3420027_192919547000_2.jpg"],
+                       ["title":"《封神传奇》进世界电影特效榜单？山寨的!","imageString":"http://imgstore.cdn.sogou.com/app/a/100540002/503008.png"],
+                       ["title":"奥运男子4x100自由泳接力 菲尔普斯,奥运男子4x100自由泳接力 菲尔普斯,奥运男子4x100自由泳接力 菲尔普斯,奥运男子4x100自由泳接力 菲尔普斯","imageString":"http://i1.hexunimg.cn/2014-08-15/167580248.jpg"],
+                       ["title":"顶住丢金压力 孙杨晋级200自决赛","imageString":"http://pic6.huitu.com/res/20130116/84481_20130116142820494200_1.jpg"]];
+        for dict in tempArr {
+            let model = DNCycleModel(fromDict: dict)
+            modelArr.append(model)
+        }
+        
+        cycleView?.dataArr = modelArr
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+}
+
+extension DNAddressViewController: UITableViewDelegate, UITableViewDataSource {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
+        cell.textLabel?.text = "我排在第\(indexPath.row)"
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
+    }
+}
 
+extension DNAddressViewController: DNCycleViewDelegate {
+    func cycleViewDidSelected(cycleView: DNCycleView, selectedIndex: NSInteger) {
+        print("打印了\(selectedIndex)")
+    }
 }

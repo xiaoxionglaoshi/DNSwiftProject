@@ -35,10 +35,9 @@ class DNHomeViewController: UIViewController {
         dragView.onClickDrageBlock = { dragV in
             
             let detail = DetailViewController()
-//            self.navigationController?.pushViewController(viewController: detail, completion: {
-//                print("xxx")
-//            })
-            self.presentVC(detail)
+            self.navigationController?.pushViewController(viewController: detail, completion: {
+                print("xxx")
+            })
             
             
         }
