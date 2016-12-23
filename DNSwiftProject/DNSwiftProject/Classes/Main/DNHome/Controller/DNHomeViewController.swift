@@ -33,8 +33,21 @@ class DNHomeViewController: UIViewController {
         dragView.backgroundColor = UIColor.green
         self.view.addSubview(dragView)
         dragView.onClickDrageBlock = { dragV in
-            print("xxx")
+            
+            let detail = DetailViewController()
+//            self.navigationController?.pushViewController(viewController: detail, completion: {
+//                print("xxx")
+//            })
+            self.presentVC(detail)
+            
+            
         }
+        
+        let img = UIImage(named: "tx")?.roundCorners(25)
+        let imageV = UIImageView(frame: CGRect(x: 100, y: 250, width: 100, height: 100))
+        imageV.backgroundColor = UIColor.green
+        self.view.addSubview(imageV)
+        imageV.image = img
         
     }
 
@@ -45,10 +58,10 @@ class DNHomeViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 
-      self.tempView.fadeTo(0.5)
      
         
     }
+    
     
     var tempView: UIView = {
         let myView = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))

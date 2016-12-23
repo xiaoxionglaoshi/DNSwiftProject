@@ -27,13 +27,26 @@ extension UIImage {
     }
     
     // 裁剪图片大小
-    public class func scaleTo(image: UIImage, w: CGFloat, h: CGFloat) -> UIImage {
+    public func scaleTo(w: CGFloat, h: CGFloat) -> UIImage {
         let newSize = CGSize(width: w, height: h)
         UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
-        image.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
+        self.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
         let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         return newImage
+    }
+    
+    // 切圆角图片
+    public func roundCorners(_ cornerRadius: CGFloat) -> UIImage {
+        let w = self.size.width * self.scale
+        let h = self.size.height * self.scale
+        let rect = CGRect(x: CGFloat(0), y: CGFloat(0), width: CGFloat(w), height: CGFloat(h))
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: CGFloat(w), height: CGFloat(h)), false, 1.0)
+        UIBezierPath(roundedRect: rect, cornerRadius: cornerRadius).addClip()
+        self.draw(in: rect)
+        let ret = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return ret
     }
     
     // 使用颜色生成图片

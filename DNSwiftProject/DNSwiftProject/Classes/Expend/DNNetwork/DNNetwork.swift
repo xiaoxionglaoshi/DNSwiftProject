@@ -49,7 +49,7 @@ class DNNetwork: NSObject {
     /// - parameter parameters: 参数
     /// - parameter success:    成功后回调 返回JSON数据
     /// - parameter failure:    失败后回调
-    open func GET(url: String, parameters: [String: AnyObject]? = [:], success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
+    open func GET(url: String, parameters: [String: Any]? = [:], success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
         
         var requestUrlString = url
         if !url.hasPrefix("http://") && !url.hasPrefix("https://") {
@@ -69,7 +69,7 @@ class DNNetwork: NSObject {
     }
     
     
-    open func POST(url: String, parameters: [String: AnyObject]? = [:], success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
+    open func POST(url: String, parameters: [String: Any]? = [:], success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
         var requestUrlString = url
         if !url.hasPrefix("http://") && !url.hasPrefix("https://") {
             requestUrlString = self.host + url
@@ -115,7 +115,7 @@ class DNNetwork: NSObject {
     /// - parameter progressValue: 上传进度
     /// - parameter success:       上传成功
     /// - parameter failure:       上传失败
-    open func upload(url: String, parameters: [String: AnyObject]?, datas: [UIImage], progressValue: @escaping DNProgressValue, success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
+    open func upload(url: String, parameters: [String: Any]? = [:], datas: [UIImage], progressValue: @escaping DNProgressValue, success: @escaping DNNetworkSuccess, failure: @escaping DNNetworkFailure) {
 
         //上传文件
         sessionManager.upload(multipartFormData: { multipartFormData in
@@ -129,7 +129,7 @@ class DNNetwork: NSObject {
             if !(parameters?.isEmpty)! {
                 DNPrint("参数: \(parameters)")
                 for (key, value) in parameters! {
-                    let parData = value.data(using: String.Encoding.utf8.rawValue)
+                    let parData = (value as AnyObject).data(using: String.Encoding.utf8.rawValue)
                     multipartFormData.append(parData!, withName: key)
                 }
             }

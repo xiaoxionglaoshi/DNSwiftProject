@@ -52,6 +52,20 @@ extension UIViewController {
         dismiss(animated: true, completion: completion)
     }
     
+    // dismiss all vc
+    public func dismissAllVC(animated: Bool = true, completion: (() -> Void)? ) {
+        var presentViewController = self.presentingViewController
+        var lastViewController = self
+        while (presentViewController != nil) {
+            let temp = presentViewController
+            presentViewController = presentViewController?.presentingViewController
+            lastViewController = temp!
+        }
+        lastViewController.dismiss(animated: animated, completion: {() -> Void in
+            completion!()
+        })
+    }
+    
     // 添加背景图片
     func setBackgroundImage(_ named: String) {
         let image = UIImage(named: named)

@@ -29,4 +29,10 @@ extension UITextField {
         self.leftView = leftView
         self.leftViewMode = UITextFieldViewMode.always
     }
+    
+    // 设置提示语文字颜色
+    public func setPlaceHolderTextColor(_ color: UIColor) {
+        self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSForegroundColorAttributeName: color])
+    }
+    
 }

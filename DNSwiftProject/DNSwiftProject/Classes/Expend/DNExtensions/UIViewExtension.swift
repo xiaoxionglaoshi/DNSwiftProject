@@ -146,9 +146,7 @@ extension UIView {
     
     // 移除子视图
     public func removeSubviews() {
-        for subview in subviews {
-            subview.removeFromSuperview()
-        }
+        self.subviews.forEach({$0.removeFromSuperview()})
     }
 }
 
@@ -416,6 +414,11 @@ extension UIView {
         let longPress = BlockLongPress(action: action)
         addGestureRecognizer(longPress)
         isUserInteractionEnabled = true
+    }
+    
+    // 移除全部手势
+    public func removeGestureRecognizers() {
+        gestureRecognizers?.forEach(removeGestureRecognizer)
     }
 }
 

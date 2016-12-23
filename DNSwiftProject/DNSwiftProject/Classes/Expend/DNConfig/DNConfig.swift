@@ -22,3 +22,5 @@ class DNConfig: NSObject {
 let JPushAppKey = "2c8a39f03e76c83807c22634"
 let JPushChannel = "AppStore"
 let JPushIsProduction = false
+
+

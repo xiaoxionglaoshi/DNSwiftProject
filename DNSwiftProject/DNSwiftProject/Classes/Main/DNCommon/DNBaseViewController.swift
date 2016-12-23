@@ -13,7 +13,7 @@ class DNBaseViewController: UIViewController {
     var navi: DNNavigationController?
     
     deinit {
-        print(self.classForCoder)
+        print("注销: \(self.classForCoder)")
     }
 
     override func viewDidLoad() {
