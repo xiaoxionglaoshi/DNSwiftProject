@@ -162,13 +162,7 @@ extension DNCycleView: UICollectionViewDelegate,UICollectionViewDataSource,UICol
             return UICollectionViewCell()
         }
         let cycleModel = dataArr[indexPath.row]
-        if let imageStr = cycleModel.imageString {
-            cell.imageView.kf.setImage(with: URL(string: imageStr), placeholder: UIImage(named: "placeHolder"))
-        }
-        cell.titleLab.text = cycleModel.title
-        cell.titleLab.numberOfLines = 2
-        let height = cell.titleLab.getEstimatedHeight()
-        cell.titleLab.h = height
+        cell.cycleModel = cycleModel
         return cell
     }
     

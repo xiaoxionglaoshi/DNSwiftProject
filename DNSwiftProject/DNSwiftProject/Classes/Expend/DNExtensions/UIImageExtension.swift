@@ -49,6 +49,33 @@ extension UIImage {
         return ret
     }
     
+    // 添加边框
+    public func apply(border: CGFloat, color: UIColor) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        let width = self.cgImage?.width
+        let height = self.cgImage?.height
+        let bits = self.cgImage?.bitsPerComponent
+        let colorSpace = self.cgImage?.colorSpace
+        let bitmapInfo = self.cgImage?.bitmapInfo
+        let context = CGContext(data: nil, width: width!, height: height!, bitsPerComponent: bits!, bytesPerRow: 0, space: colorSpace!, bitmapInfo: (bitmapInfo?.rawValue)!)
+        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+        color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        
+        context?.setStrokeColor(red: red, green: green, blue: blue, alpha: alpha)
+        context?.setLineWidth(border)
+        
+        let rect = CGRect(x: 0, y: 0, width: size.width*scale, height: size.height*scale)
+        let inset = rect.insetBy(dx: border*scale, dy: border*scale)
+        
+        context?.strokeEllipse(in: inset)
+        context?.draw(self.cgImage!, in: inset)
+        
+        let image = UIImage(cgImage: (context?.makeImage()!)!)
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
     // 使用颜色生成图片
     public func withColor(_ tintColor: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)

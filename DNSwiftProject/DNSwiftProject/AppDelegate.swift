@@ -46,7 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 推送注册
         RegisterJPush(launchOptions: launchOptions)
         
-        
         return true
     }
 

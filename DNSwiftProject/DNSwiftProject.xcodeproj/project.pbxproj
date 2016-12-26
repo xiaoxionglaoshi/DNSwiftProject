@@ -39,6 +39,10 @@
 		516C11651E0CBB90007B5D69 /* DNCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C11641E0CBB90007B5D69 /* DNCycleViewCell.swift */; };
 		516C11681E0CC23F007B5D69 /* mn_pageControl_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C11661E0CC23F007B5D69 /* mn_pageControl_selected@2x.png */; };
 		516C11691E0CC23F007B5D69 /* mn_pageControl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 516C11671E0CC23F007B5D69 /* mn_pageControl@2x.png */; };
+		516C116F1E0D277F007B5D69 /* ButtonExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C116C1E0D277F007B5D69 /* ButtonExtenstion.swift */; };
+		516C11701E0D277F007B5D69 /* MMImageUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C116D1E0D277F007B5D69 /* MMImageUpload.swift */; };
+		516C11711E0D277F007B5D69 /* WaveObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C116E1E0D277F007B5D69 /* WaveObject.swift */; };
+		516C11731E0D3193007B5D69 /* LocalNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C11721E0D3193007B5D69 /* LocalNotificationHelper.swift */; };
 		517065F81E07E5EA00EF8119 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517065F71E07E5EA00EF8119 /* DateExtension.swift */; };
 		517D3C751E0A1EDF00B679F1 /* DNDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3C741E0A1EDF00B679F1 /* DNDragView.swift */; };
 		517F9CF11E0235EA00B2B207 /* DNCustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */; };
@@ -147,6 +151,10 @@
 		516C11641E0CBB90007B5D69 /* DNCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCycleViewCell.swift; sourceTree = "<group>"; };
 		516C11661E0CC23F007B5D69 /* mn_pageControl_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mn_pageControl_selected@2x.png"; sourceTree = "<group>"; };
 		516C11671E0CC23F007B5D69 /* mn_pageControl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mn_pageControl@2x.png"; sourceTree = "<group>"; };
+		516C116C1E0D277F007B5D69 /* ButtonExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonExtenstion.swift; sourceTree = "<group>"; };
+		516C116D1E0D277F007B5D69 /* MMImageUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMImageUpload.swift; sourceTree = "<group>"; };
+		516C116E1E0D277F007B5D69 /* WaveObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveObject.swift; sourceTree = "<group>"; };
+		516C11721E0D3193007B5D69 /* LocalNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationHelper.swift; sourceTree = "<group>"; };
 		517065F71E07E5EA00EF8119 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		517D3C741E0A1EDF00B679F1 /* DNDragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNDragView.swift; sourceTree = "<group>"; };
 		517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCustomAlert.swift; sourceTree = "<group>"; };
@@ -347,6 +355,16 @@
 			path = DNCycleView;
 			sourceTree = "<group>";
 		};
+		516C116B1E0D2774007B5D69 /* DNUploadImage */ = {
+			isa = PBXGroup;
+			children = (
+				516C116C1E0D277F007B5D69 /* ButtonExtenstion.swift */,
+				516C116D1E0D277F007B5D69 /* MMImageUpload.swift */,
+				516C116E1E0D277F007B5D69 /* WaveObject.swift */,
+			);
+			path = DNUploadImage;
+			sourceTree = "<group>";
+		};
 		517D3C731E0A1EC900B679F1 /* DNDragView */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,6 +542,7 @@
 				51F4D8591DE83B580037A61E /* DNTool.swift */,
 				519F16091DEC174C00EB0D9F /* DNMessages.swift */,
 				518034481DF537F000EF45E5 /* DNCustomParser.swift */,
+				516C11721E0D3193007B5D69 /* LocalNotificationHelper.swift */,
 			);
 			path = DNTool;
 			sourceTree = "<group>";
@@ -722,6 +741,7 @@
 		51F01D331DE816C700C25880 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				516C116B1E0D2774007B5D69 /* DNUploadImage */,
 				516C115F1E0CB9EA007B5D69 /* DNCycleView */,
 				517D3C731E0A1EC900B679F1 /* DNDragView */,
 				519F03951E03D25F00609AF2 /* DNLaunchImage */,
@@ -955,6 +975,7 @@
 				518C5B2F1E092A2B0019835D /* BlockLongPress.swift in Sources */,
 				516C11631E0CBB79007B5D69 /* DNCycleView.swift in Sources */,
 				518C6D8B1DF009FC00C23501 /* DetailViewController.swift in Sources */,
+				516C11711E0D277F007B5D69 /* WaveObject.swift in Sources */,
 				51F4D85C1DE8466B0037A61E /* DNHomeRequest.swift in Sources */,
 				51F4D8511DE81B110037A61E /* DNMineViewController.swift in Sources */,
 				518C5B1B1E08FEB90019835D /* NSAttributedStringExtensions.swift in Sources */,
@@ -966,8 +987,10 @@
 				51F4D8431DE8199C0037A61E /* DNConfig.swift in Sources */,
 				515F7BE91E0BAAF200F4B2BD /* UIColorExtension.swift in Sources */,
 				517F9CF51E023B3D00B2B207 /* DNNotificationView.swift in Sources */,
+				516C116F1E0D277F007B5D69 /* ButtonExtenstion.swift in Sources */,
 				519F160A1DEC174C00EB0D9F /* DNMessages.swift in Sources */,
 				519F039D1E03D65200609AF2 /* DNLoadAdsWebViewViewController.swift in Sources */,
+				516C11731E0D3193007B5D69 /* LocalNotificationHelper.swift in Sources */,
 				517065F81E07E5EA00EF8119 /* DateExtension.swift in Sources */,
 				518C5B211E0919C80019835D /* TimerExtensions.swift in Sources */,
 				515F7BEB1E0BAED800F4B2BD /* IntExtension.swift in Sources */,
@@ -1001,6 +1024,7 @@
 				5148C1C21E013979002701C5 /* DNJPushExtension.swift in Sources */,
 				51CE11801DFE9A9E00787D4C /* ArrayExtensions.swift in Sources */,
 				519F03991E03D29400609AF2 /* DNLaunchImageView.swift in Sources */,
+				516C11701E0D277F007B5D69 /* MMImageUpload.swift in Sources */,
 				517D3C751E0A1EDF00B679F1 /* DNDragView.swift in Sources */,
 				51F4D84B1DE81AE80037A61E /* DNHomeViewController.swift in Sources */,
 				5187BDF71DF1489600C65AEA /* SwiftNotice.swift in Sources */,
