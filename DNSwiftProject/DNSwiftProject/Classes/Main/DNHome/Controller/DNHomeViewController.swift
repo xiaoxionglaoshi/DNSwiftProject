@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class DNHomeViewController: UIViewController {
     
@@ -19,7 +18,34 @@ class DNHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.view.addSubview(tempView)
+        print(NSHomeDirectory())
+        
+        let file = DNFileManager(fileName: "myData", fileExtension: .txt, subDirectory: "txtfiles", directory: .documentDirectory)
+        let text = "hello world"
+        do {
+            try file.saveFileWith(fileContents: text)
+        } catch {
+            print("file save error: \(error)")
+        }
+        
+        do {
+            let contents = try file.getContentsOfFile()
+            print(contents)
+        } catch {
+            print("file read error: \(error)")
+        }
+        
+        let file2 = DNFileManager(fileName: "myImage", fileExtension: .jpg, subDirectory: "imgfiles", directory: .documentDirectory)
+        let file3 = DNFileManager(fileName: "myImage2", fileExtension: .jpg, subDirectory: "imgfiles", directory: .documentDirectory)
+
+        let image = UIImage(named: "tx")?.roundCorners(159).apply(border: 5, color: UIColor.green)
+        do {
+            try file2.saveFileWith(image: image!)
+            try file3.saveFileWith(image: image!)
+            
+        } catch {
+            print("img save error: \(error)")
+        }
         
         myLabel = UILabel(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
         myLabel.text = "发动机是发奖;束带结发爱的是减肥熬时间放进去哦;文件而发生大家;放假安静的收费记录;卡倒计时;浪费就;阿来得及说放假啊大事发生"

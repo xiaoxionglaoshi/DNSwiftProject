@@ -43,6 +43,7 @@
 		516C11701E0D277F007B5D69 /* MMImageUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C116D1E0D277F007B5D69 /* MMImageUpload.swift */; };
 		516C11711E0D277F007B5D69 /* WaveObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C116E1E0D277F007B5D69 /* WaveObject.swift */; };
 		516C11731E0D3193007B5D69 /* LocalNotificationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516C11721E0D3193007B5D69 /* LocalNotificationHelper.swift */; };
+		516EC6A41E11FDDC00AD91D2 /* DNFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516EC6A31E11FDDC00AD91D2 /* DNFileManager.swift */; };
 		517065F81E07E5EA00EF8119 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517065F71E07E5EA00EF8119 /* DateExtension.swift */; };
 		517D3C751E0A1EDF00B679F1 /* DNDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517D3C741E0A1EDF00B679F1 /* DNDragView.swift */; };
 		517F9CF11E0235EA00B2B207 /* DNCustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */; };
@@ -76,6 +77,13 @@
 		519F16061DEBE39100EB0D9F /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 519F16051DEBE39100EB0D9F /* main.json */; };
 		519F16081DEBFE8B00EB0D9F /* DNMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519F16071DEBFE8B00EB0D9F /* DNMainModel.swift */; };
 		519F160A1DEC174C00EB0D9F /* DNMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519F16091DEC174C00EB0D9F /* DNMessages.swift */; };
+		51AA72931E1102BB0053ED55 /* DNComposeTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA728F1E1102BB0053ED55 /* DNComposeTypeButton.swift */; };
+		51AA72941E1102BB0053ED55 /* DNComposeTypeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51AA72901E1102BB0053ED55 /* DNComposeTypeButton.xib */; };
+		51AA72951E1102BB0053ED55 /* DNComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA72911E1102BB0053ED55 /* DNComposeTypeView.swift */; };
+		51AA72961E1102BB0053ED55 /* DNComposeTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51AA72921E1102BB0053ED55 /* DNComposeTypeView.xib */; };
+		51AA72981E11095C0053ED55 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51AA72971E11095C0053ED55 /* UIButtonExtension.swift */; };
+		51BE90901E10B33900B893CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE908F1E10B33900B893CA /* User.swift */; };
+		51BE90D81E10C58D00B893CA /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE90D71E10C58D00B893CA /* UIDeviceExtension.swift */; };
 		51CE11801DFE9A9E00787D4C /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE117F1DFE9A9E00787D4C /* ArrayExtensions.swift */; };
 		51F01CD61DE7EE8500C25880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F01CD51DE7EE8500C25880 /* AppDelegate.swift */; };
 		51F01CDD1DE7EE8500C25880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F01CDC1DE7EE8500C25880 /* Assets.xcassets */; };
@@ -155,6 +163,7 @@
 		516C116D1E0D277F007B5D69 /* MMImageUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMImageUpload.swift; sourceTree = "<group>"; };
 		516C116E1E0D277F007B5D69 /* WaveObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveObject.swift; sourceTree = "<group>"; };
 		516C11721E0D3193007B5D69 /* LocalNotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationHelper.swift; sourceTree = "<group>"; };
+		516EC6A31E11FDDC00AD91D2 /* DNFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNFileManager.swift; sourceTree = "<group>"; };
 		517065F71E07E5EA00EF8119 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		517D3C741E0A1EDF00B679F1 /* DNDragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNDragView.swift; sourceTree = "<group>"; };
 		517F9CF01E0235EA00B2B207 /* DNCustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNCustomAlert.swift; sourceTree = "<group>"; };
@@ -188,6 +197,13 @@
 		519F16051DEBE39100EB0D9F /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		519F16071DEBFE8B00EB0D9F /* DNMainModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNMainModel.swift; sourceTree = "<group>"; };
 		519F16091DEC174C00EB0D9F /* DNMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNMessages.swift; sourceTree = "<group>"; };
+		51AA728F1E1102BB0053ED55 /* DNComposeTypeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNComposeTypeButton.swift; sourceTree = "<group>"; };
+		51AA72901E1102BB0053ED55 /* DNComposeTypeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNComposeTypeButton.xib; sourceTree = "<group>"; };
+		51AA72911E1102BB0053ED55 /* DNComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNComposeTypeView.swift; sourceTree = "<group>"; };
+		51AA72921E1102BB0053ED55 /* DNComposeTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DNComposeTypeView.xib; sourceTree = "<group>"; };
+		51AA72971E11095C0053ED55 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		51BE908F1E10B33900B893CA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		51BE90D71E10C58D00B893CA /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		51CE117F1DFE9A9E00787D4C /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		51F01CD21DE7EE8500C25880 /* DNSwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNSwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51F01CD51DE7EE8500C25880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../DNSwiftProject/AppDelegate.swift; sourceTree = "<group>"; };
@@ -322,6 +338,7 @@
 				518C5B101E08C9B10019835D /* UILabelExtension.swift */,
 				518C5B0E1E08C6730019835D /* UIImageExtension.swift */,
 				515F7BD81E0B7EC700F4B2BD /* UIImageViewExtension.swift */,
+				51AA72971E11095C0053ED55 /* UIButtonExtension.swift */,
 				518C5B141E08CF330019835D /* UITextFieldExtensions.swift */,
 				515F7BE01E0B872500F4B2BD /* UITextViewExtensions.swift */,
 				518C5B121E08CA290019835D /* UIViewExtension.swift */,
@@ -331,6 +348,7 @@
 				515F7BDE1E0B818600F4B2BD /* UINavigationExtension.swift */,
 				518C5B181E08E4400019835D /* URLExtensions.swift */,
 				518C5B221E091A920019835D /* UIApplicationExtensions.swift */,
+				51BE90D71E10C58D00B893CA /* UIDeviceExtension.swift */,
 				518C5B241E091BF00019835D /* CGFloatExtensions.swift */,
 				515F7BEA1E0BAED800F4B2BD /* IntExtension.swift */,
 				515F7BE81E0BAAF200F4B2BD /* UIColorExtension.swift */,
@@ -363,6 +381,14 @@
 				516C116E1E0D277F007B5D69 /* WaveObject.swift */,
 			);
 			path = DNUploadImage;
+			sourceTree = "<group>";
+		};
+		516EC6A21E11FDCB00AD91D2 /* DNDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				516EC6A31E11FDDC00AD91D2 /* DNFileManager.swift */,
+			);
+			path = DNDataBase;
 			sourceTree = "<group>";
 		};
 		517D3C731E0A1EC900B679F1 /* DNDragView */ = {
@@ -407,6 +433,17 @@
 				519F039C1E03D65200609AF2 /* DNLoadAdsWebViewViewController.swift */,
 			);
 			path = DNLaunchImage;
+			sourceTree = "<group>";
+		};
+		51AA728C1E1102080053ED55 /* DNCenter */ = {
+			isa = PBXGroup;
+			children = (
+				51AA728F1E1102BB0053ED55 /* DNComposeTypeButton.swift */,
+				51AA72901E1102BB0053ED55 /* DNComposeTypeButton.xib */,
+				51AA72911E1102BB0053ED55 /* DNComposeTypeView.swift */,
+				51AA72921E1102BB0053ED55 /* DNComposeTypeView.xib */,
+			);
+			path = DNCenter;
 			sourceTree = "<group>";
 		};
 		51CE117E1DFE9A7900787D4C /* DNExtensions */ = {
@@ -512,20 +549,13 @@
 		51F01D161DE816C700C25880 /* Expend */ = {
 			isa = PBXGroup;
 			children = (
+				516EC6A21E11FDCB00AD91D2 /* DNDataBase */,
 				51CE117E1DFE9A7900787D4C /* DNExtensions */,
 				51F4D8411DE819610037A61E /* DNConfig */,
-				51F01D171DE816C700C25880 /* DNDatabase */,
 				51F01D181DE816C700C25880 /* DNNetwork */,
 				51F01D191DE816C700C25880 /* DNTool */,
 			);
 			path = Expend;
-			sourceTree = "<group>";
-		};
-		51F01D171DE816C700C25880 /* DNDatabase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DNDatabase;
 			sourceTree = "<group>";
 		};
 		51F01D181DE816C700C25880 /* DNNetwork */ = {
@@ -550,6 +580,7 @@
 		51F01D1A1DE816C700C25880 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				51AA728C1E1102080053ED55 /* DNCenter */,
 				51F01D2B1DE816C700C25880 /* DNLogin */,
 				51F01D271DE816C700C25880 /* DNHome */,
 				51F01D1B1DE816C700C25880 /* DNAddress */,
@@ -600,6 +631,7 @@
 				51F4D8461DE819EA0037A61E /* DNTabBarViewController.swift */,
 				51F4D8521DE81C6F0037A61E /* DNGuidePageViewController.swift */,
 				5148C1CA1E01456D002701C5 /* DNWKWebViewController.swift */,
+				51BE908F1E10B33900B893CA /* User.swift */,
 			);
 			path = DNCommon;
 			sourceTree = "<group>";
@@ -891,9 +923,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				516C11681E0CC23F007B5D69 /* mn_pageControl_selected@2x.png in Resources */,
+				51AA72961E1102BB0053ED55 /* DNComposeTypeView.xib in Resources */,
 				519F16061DEBE39100EB0D9F /* main.json in Resources */,
 				516C11691E0CC23F007B5D69 /* mn_pageControl@2x.png in Resources */,
 				51F01CDD1DE7EE8500C25880 /* Assets.xcassets in Resources */,
+				51AA72941E1102BB0053ED55 /* DNComposeTypeButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -971,6 +1005,7 @@
 				518C5B251E091BF00019835D /* CGFloatExtensions.swift in Sources */,
 				5148C1CB1E01456D002701C5 /* DNWKWebViewController.swift in Sources */,
 				518C5B2D1E0929C70019835D /* BlockPinch.swift in Sources */,
+				51AA72931E1102BB0053ED55 /* DNComposeTypeButton.swift in Sources */,
 				51F4D8531DE81C6F0037A61E /* DNGuidePageViewController.swift in Sources */,
 				518C5B2F1E092A2B0019835D /* BlockLongPress.swift in Sources */,
 				516C11631E0CBB79007B5D69 /* DNCycleView.swift in Sources */,
@@ -987,6 +1022,8 @@
 				51F4D8431DE8199C0037A61E /* DNConfig.swift in Sources */,
 				515F7BE91E0BAAF200F4B2BD /* UIColorExtension.swift in Sources */,
 				517F9CF51E023B3D00B2B207 /* DNNotificationView.swift in Sources */,
+				51BE90D81E10C58D00B893CA /* UIDeviceExtension.swift in Sources */,
+				51BE90901E10B33900B893CA /* User.swift in Sources */,
 				516C116F1E0D277F007B5D69 /* ButtonExtenstion.swift in Sources */,
 				519F160A1DEC174C00EB0D9F /* DNMessages.swift in Sources */,
 				519F039D1E03D65200609AF2 /* DNLoadAdsWebViewViewController.swift in Sources */,
@@ -998,6 +1035,7 @@
 				518C5B231E091A920019835D /* UIApplicationExtensions.swift in Sources */,
 				519F16081DEBFE8B00EB0D9F /* DNMainModel.swift in Sources */,
 				518034491DF537F000EF45E5 /* DNCustomParser.swift in Sources */,
+				51AA72951E1102BB0053ED55 /* DNComposeTypeView.swift in Sources */,
 				5148C1C91E0144BD002701C5 /* DNFoundCell.swift in Sources */,
 				51F4D8491DE81A590037A61E /* DNNavigationController.swift in Sources */,
 				517F9CF11E0235EA00B2B207 /* DNCustomAlert.swift in Sources */,
@@ -1009,6 +1047,7 @@
 				518C5B291E0928970019835D /* BlockSwipe.swift in Sources */,
 				51F4D85E1DE847060037A61E /* DNHomeModel.swift in Sources */,
 				51F4D84F1DE81B040037A61E /* DNFoundViewController.swift in Sources */,
+				516EC6A41E11FDDC00AD91D2 /* DNFileManager.swift in Sources */,
 				518C5B111E08C9B10019835D /* UILabelExtension.swift in Sources */,
 				516C11651E0CBB90007B5D69 /* DNCycleViewCell.swift in Sources */,
 				518C5B1D1E0917700019835D /* NSDictionaryExtensions.swift in Sources */,
@@ -1033,6 +1072,7 @@
 				5148C1C51E013E76002701C5 /* DNMineCell.swift in Sources */,
 				518C5B1F1E0917D20019835D /* NSObjectExtensions.swift in Sources */,
 				518C5B151E08CF330019835D /* UITextFieldExtensions.swift in Sources */,
+				51AA72981E11095C0053ED55 /* UIButtonExtension.swift in Sources */,
 				515F7BDF1E0B818600F4B2BD /* UINavigationExtension.swift in Sources */,
 				519F03971E03D28100609AF2 /* DNLaunchImage.swift in Sources */,
 				51F4D85A1DE83B580037A61E /* DNTool.swift in Sources */,

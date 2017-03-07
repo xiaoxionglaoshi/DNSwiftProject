@@ -68,8 +68,11 @@ extension DNAddressViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let userInfo = ["url" : "www.baidu.co"]
-        LocalNotificationHelper.sharedInstance().scheduleNotificationWithKey(key: "baidu", title: "我是百度", message: "Lets take a break", seconds: 5, userInfo: userInfo as [NSObject : AnyObject]?)
+        for item in 0...4 {
+            if item != 2 {
+                self.tabBarController?.viewControllers?[item].tabBarItem.badgeValue = String(indexPath.row)
+            }
+        }
     }
 }
 

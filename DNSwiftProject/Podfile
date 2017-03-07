@@ -10,5 +10,5 @@ pod 'SwiftyJSON'
 pod 'SwiftMessages'
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 pod 'Kingfisher'
-
+pod 'pop'
 end

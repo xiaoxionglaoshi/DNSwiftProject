@@ -12,3 +12,6 @@
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #endif
+
+// MD5加密
+#import <CommonCrypto/CommonCrypto.h>

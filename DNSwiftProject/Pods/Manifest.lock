@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (4.2.0)
   - Kingfisher (3.2.2)
+  - pop (1.0.9)
   - SnapKit (3.0.2)
   - Spring (1.0.3)
   - SwiftMessages (3.1.1)
@@ -9,6 +10,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - Kingfisher
+  - pop
   - SnapKit (~> 3.0.2)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
   - SwiftMessages
@@ -27,11 +29,12 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   Kingfisher: 821466474ad7ffc375a4aecadfa05068cfed67b3
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SwiftMessages: 1216ea6bdf8d92ff0f6f98a23e5442711b1e71ac
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: 8c2b8b0ea5574ef16eeb804a4501e3f2c22464df
+PODFILE CHECKSUM: e215fa66a8abc39149978ec597dd16c7bf5f8b39
 
 COCOAPODS: 1.1.1
